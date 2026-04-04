@@ -6,6 +6,7 @@
 <title>4U Tattoo Studio | Bhilai</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
+
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +18,6 @@ body {
   background: #0f0f0f;
   color: #fff;
   line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 header {
@@ -43,6 +39,7 @@ nav a {
   margin-left: 25px;
   font-size: 14px;
   color: #ccc;
+  transition: 0.3s;
 }
 
 nav a:hover {
@@ -50,42 +47,71 @@ nav a:hover {
 }
 
 .hero {
-  height: 90vh;
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQVs2vppAB9w0S81BRQOY5ImagN3CvcY-Yrw&s') center/cover no-repeat;
+  height: 85vh;
   display: flex;
   align-items: center;
   padding: 0 8%;
+  background: #0f0f0f;
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 650px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 46px;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .hero p {
   margin-bottom: 30px;
-  color: #ddd;
+  color: #bbb;
 }
 
 .btn {
-  padding: 12px 25px;
+  padding: 12px 28px;
   background: #e63946;
   color: #fff;
   font-size: 14px;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c62836;
 }
 
 .section {
-  padding: 80px 8%;
+  padding: 90px 8%;
 }
 
 .section h2 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   font-size: 28px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text p {
+  color: #ccc;
+  font-size: 15px;
 }
 
 .grid {
@@ -102,39 +128,50 @@ nav a:hover {
   height: 300px;
   object-fit: cover;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
-.about {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.about img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
+.portfolio-grid img:hover {
+  transform: scale(1.05);
 }
 
 .reviews {
   background: #111;
-  padding: 60px 8%;
+  padding: 80px 8%;
 }
 
 .review-box {
   background: #1c1c1c;
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
   margin-bottom: 20px;
+  color: #ccc;
 }
 
 footer {
   background: #000;
-  padding: 40px 8%;
+  padding: 50px 8%;
   text-align: center;
   color: #aaa;
+  font-size: 14px;
 }
+
+@media(max-width: 900px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -162,8 +199,14 @@ footer {
   <h2>Why Choose 4U Tattoo Studio?</h2>
   <div class="about">
     <img src="https://images.jdmagicbox.com/comp/durg/w3/9999px788.x788.141104213306.w6w3/catalogue/4u-tattoo-studio-supela-durg-tattoo-artists-t8ibi1173u.jpg">
-    <div>
-      <p>We are a women-owned tattoo studio known for clean environment, precision artwork and a comfortable experience for first-time clients. Our professional artists ensure safety, hygiene and perfection in every design.</p>
+    <div class="about-text">
+      <p>
+        We are a women-owned tattoo studio known for precision artwork,
+        strict hygiene protocols and a comfortable experience for
+        first-time clients. With 950+ satisfied customers and a 4.9 rating,
+        4U Tattoo Studio has become Bhilai’s trusted destination for
+        professional tattoo artistry.
+      </p>
     </div>
   </div>
 </section>
