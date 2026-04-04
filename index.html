@@ -7,12 +7,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -21,13 +21,13 @@ body {
   line-height: 1.6;
 }
 
-/* ===== HEADER ===== */
+/* ---------------- NAVBAR ---------------- */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 8%;
+  padding: 18px 8%;
   background: #000;
   position: sticky;
   top: 0;
@@ -41,13 +41,12 @@ header {
 
 nav {
   display: flex;
+  gap: 25px;
 }
 
 nav a {
-  margin-left: 25px;
-  font-size: 14px;
   color: #ccc;
-  text-decoration: none;
+  font-size: 14px;
   transition: 0.3s;
 }
 
@@ -61,14 +60,13 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* ===== HERO ===== */
+/* ---------------- HERO ---------------- */
 
 .hero {
-  height: 85vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   padding: 0 8%;
-  background: #0f0f0f;
 }
 
 .hero-content {
@@ -93,14 +91,14 @@ nav a:hover {
   font-size: 14px;
   border-radius: 4px;
   transition: 0.3s;
-  text-decoration: none;
+  display: inline-block;
 }
 
 .btn:hover {
   background: #c62836;
 }
 
-/* ===== SECTIONS ===== */
+/* ---------------- SECTIONS ---------------- */
 
 .section {
   padding: 90px 8%;
@@ -111,35 +109,32 @@ nav a:hover {
   font-size: 28px;
 }
 
+/* ---------------- ABOUT ---------------- */
+
 .about {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
 .about img {
-  width: 350px;
+  width: 280px;
   border-radius: 10px;
 }
 
 .about-text {
   flex: 1;
-  min-width: 300px;
-}
-
-.about-text p {
+  min-width: 280px;
   color: #ccc;
   font-size: 15px;
 }
 
-.grid {
-  display: grid;
-  gap: 20px;
-}
+/* ---------------- PORTFOLIO ---------------- */
 
 .portfolio-grid {
+  display: grid;
+  gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
@@ -155,6 +150,8 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* ---------------- REVIEWS ---------------- */
+
 .reviews {
   background: #111;
   padding: 80px 8%;
@@ -168,6 +165,16 @@ nav a:hover {
   color: #ccc;
 }
 
+/* ---------------- MAP SECTION ---------------- */
+
+.map-container iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+}
+
+/* ---------------- FOOTER ---------------- */
+
 footer {
   background: #000;
   padding: 50px 8%;
@@ -176,9 +183,13 @@ footer {
   font-size: 14px;
 }
 
-/* ===== MOBILE FIX ===== */
+/* ---------------- MOBILE ---------------- */
 
 @media(max-width: 900px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
 
   nav {
     position: absolute;
@@ -206,10 +217,6 @@ footer {
     display: block;
   }
 
-  .hero h1 {
-    font-size: 36px;
-  }
-
   .about {
     flex-direction: column;
     text-align: center;
@@ -217,19 +224,17 @@ footer {
 
   .about img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
   }
 }
-
 </style>
 </head>
+
 <body>
 
 <header>
   <div class="logo">4U Tattoo Studio</div>
-
   <div class="menu-toggle" id="menu-toggle">☰</div>
-
   <nav id="navbar">
     <a href="#">Home</a>
     <a href="#">Artists</a>
@@ -239,9 +244,75 @@ footer {
   </nav>
 </header>
 
-<!-- YOUR PAGE CONTENT REMAINS SAME BELOW -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Bhilai’s Most Trusted Tattoo Studio</h1>
+    <p>4.9 ★ Rating | 950+ Happy Clients | Professional & Hygienic Environment</p>
+    <a href="#" class="btn">Book Consultation</a>
+  </div>
+</section>
 
-<!-- Add this before closing body -->
+<section class="section">
+  <h2>Why Choose 4U Tattoo Studio?</h2>
+  <div class="about">
+    <img src="https://images.jdmagicbox.com/comp/durg/w3/9999px788.x788.141104213306.w6w3/catalogue/4u-tattoo-studio-supela-durg-tattoo-artists-t8ibi1173u.jpg">
+    <div class="about-text">
+      We are a women-owned tattoo studio known for precision artwork,
+      strict hygiene protocols and a comfortable experience for
+      first-time clients. With 950+ satisfied customers and a 4.9 rating,
+      4U Tattoo Studio has become Bhilai’s trusted destination for
+      professional tattoo artistry.
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Our Work</h2>
+  <div class="portfolio-grid">
+    <img src="https://images.jdmagicbox.com/comp/bhilai/w3/9999px788.x788.141104213306.w6w3/catalogue/4u-tattoo-studio-supela-bhilai-tattoo-artists-ndmf8mjbdg.jpg">
+    <img src="https://images.jdmagicbox.com/comp/bhilai/w3/9999px788.x788.141104213306.w6w3/catalogue/4u-tattoo-studio-supela-bhilai-tattoo-artists-0b3bqq8mak.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Q6gGSLIqRQePHS3NMLNCFQSYdy3vI4tc0A&s">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqhddBfYPvE9uCJHs41Lvt0QZOU5NWbqj0xg&s">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM4br5IY0SSFTjpv9mAmvQwA0UTyMQQx2-GA&s">
+    <img src="https://content.jdmagicbox.com/comp/durg/w3/9999px788.x788.141104213306.w6w3/catalogue/4u-tattoo-studio-supela-bhilai-tattoo-artists-fcoc5dg9i5-250.jpg">
+  </div>
+</section>
+
+<section class="reviews">
+  <h2>What Clients Say</h2>
+  <div class="review-box">
+    “I absolutely loved the services and the environment of the place.”
+  </div>
+  <div class="review-box">
+    “Clean, professional, and followed strict hygiene protocols.”
+  </div>
+</section>
+
+<section class="section">
+  <h2>Visit Us</h2>
+  <div class="about">
+    <div class="about-text">
+      <strong>4U Tattoo Studio</strong><br><br>
+      Indian Coffee House, Akash Ganga, Supela,<br>
+      Bhilai, Chhattisgarh 490023<br><br>
+      Phone: 070677 77750<br><br>
+      Open Daily | 11:00 AM Onwards
+    </div>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps?q=4U+Tattoo+Studio+Bhilai&output=embed"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>4U Tattoo Studio | Supela, Bhilai, Chhattisgarh</p>
+  <p>Call: 070677 77750</p>
+</footer>
 
 <script>
   const toggle = document.getElementById("menu-toggle");
