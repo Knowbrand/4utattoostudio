@@ -94,27 +94,37 @@ nav a:hover {
   border-radius: 4px;
   transition: 0.3s;
   display: inline-block;
-  box-shadow: 0 0 20px rgba(230,57,70,0.25);
 }
 
 .btn:hover {
   background: #c62836;
-  box-shadow: 0 0 30px rgba(230,57,70,0.4);
 }
 
-/* ---------------- SECTIONS ---------------- */
+/* ---------------- LIGHT SECTION ---------------- */
 
-.section {
+.section-light {
   padding: 90px 8%;
-  background: #141414;
-  border-top: 1px solid #1c1c1c;
+  background: #f4f4f4;
+  color: #111;
 }
 
-.section:nth-of-type(even) {
+.section-light h2 {
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+.section-light .about-text {
+  color: #333;
+}
+
+/* ---------------- DARK SECTION ---------------- */
+
+.section-dark {
+  padding: 90px 8%;
   background: #0f0f0f;
 }
 
-.section h2 {
+.section-dark h2 {
   margin-bottom: 50px;
   font-size: 28px;
 }
@@ -136,7 +146,6 @@ nav a:hover {
 .about-text {
   flex: 1;
   min-width: 280px;
-  color: #ccc;
   font-size: 15px;
 }
 
@@ -165,7 +174,6 @@ nav a:hover {
 .reviews {
   background: #181818;
   padding: 80px 8%;
-  border-top: 1px solid #1c1c1c;
 }
 
 .review-box {
@@ -174,10 +182,9 @@ nav a:hover {
   border-radius: 8px;
   margin-bottom: 20px;
   color: #ccc;
-  border: 1px solid #242424;
 }
 
-/* ---------------- MAP SECTION ---------------- */
+/* ---------------- MAP ---------------- */
 
 .map-container iframe {
   border-radius: 10px;
@@ -194,7 +201,6 @@ footer {
   text-align: center;
   color: #aaa;
   font-size: 14px;
-  border-top: 1px solid #1a1a1a;
 }
 
 /* ---------------- MOBILE ---------------- */
@@ -266,7 +272,7 @@ footer {
   </div>
 </section>
 
-<section class="section">
+<section class="section-light">
   <h2>Why Choose 4U Tattoo Studio?</h2>
   <div class="about">
     <img src="https://images.jdmagicbox.com/comp/durg/w3/9999px788.x788.141104213306.w6w3/catalogue/4u-tattoo-studio-supela-durg-tattoo-artists-t8ibi1173u.jpg">
@@ -280,7 +286,7 @@ footer {
   </div>
 </section>
 
-<section class="section">
+<section class="section-dark">
   <h2>Our Work</h2>
   <div class="portfolio-grid">
     <img src="https://images.jdmagicbox.com/comp/bhilai/w3/9999px788.x788.141104213306.w6w3/catalogue/4u-tattoo-studio-supela-bhilai-tattoo-artists-ndmf8mjbdg.jpg">
@@ -302,7 +308,7 @@ footer {
   </div>
 </section>
 
-<section class="section">
+<section class="section-light">
   <h2>Visit Us</h2>
   <div class="about">
     <div class="about-text">
